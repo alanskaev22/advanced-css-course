@@ -1,12 +1,12 @@
 {
   "name": "natours",
   "version": "1.0.0",
-  "description": "",
+  "description": "Landing page for Natours",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass-starter": "node-sass starter/sass/main.scss starter/css/style.css -w"
   },
-  "author": "",
+  "author": "Alan S.",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.1"
