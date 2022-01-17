@@ -47,17 +47,17 @@ body{
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box{
+.header__logo-box{
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo{
+.header__logo{
     height: 3.5rem;
 }
 
-.text-box{
+.header__text-box{
     position: absolute;
     left:50%;
     top:40%;
@@ -72,7 +72,7 @@ body{
     margin-bottom: 6rem;
 }
 
-.heading-primary-main{
+.heading-primary--main{
     display: block;
     font-size: 6rem;
     font-weight: 700;
@@ -80,7 +80,7 @@ body{
     animation: moveInLeft 1s ease-out;
 }
 
-.heading-primary-sub{
+.heading-primary--sub{
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -127,16 +127,19 @@ body{
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.2);
 }
 
-.btn-white{
+.btn--white{
     background-color: #FFF;
     color: #777;
 }
 
-.btn-white::after{
+.btn--white::after{
     background-color: #FFF;
 }
 
-
+.btn--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
 
 @keyframes moveInLeft {
     0%{
@@ -166,6 +169,18 @@ body{
     }
 
     100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0%  {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100%    {
         opacity: 1;
         transform: translate(0);
     }
